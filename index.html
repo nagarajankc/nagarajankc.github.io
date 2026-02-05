@@ -32,22 +32,22 @@ header{
   background:linear-gradient(135deg,var(--primary),var(--primary-dark));
   color:white;
   text-align:center;
-  padding:80px 20px;
+  padding:70px 20px;
 }
 
 header h1{
-  font-size:44px;
+  font-size:clamp(32px,5vw,44px);
 }
 
 header p{
-  font-size:20px;
+  font-size:clamp(16px,3vw,20px);
   margin-top:10px;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav{
   background:var(--white);
-  padding:15px;
+  padding:12px 10px;
   text-align:center;
   position:sticky;
   top:0;
@@ -56,11 +56,12 @@ nav{
 }
 
 nav a{
-  margin:0 15px;
+  display:inline-block;
+  margin:6px 10px;
   text-decoration:none;
   color:var(--primary);
   font-weight:600;
-  padding:8px 12px;
+  padding:8px 14px;
   border-radius:6px;
   transition:0.3s;
 }
@@ -70,33 +71,33 @@ nav a:hover{
   color:white;
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
   max-width:1100px;
   margin:auto;
-  padding:60px 20px;
+  padding:50px 20px;
 }
 
 h2{
   color:var(--primary);
-  margin-bottom:25px;
-  font-size:28px;
+  margin-bottom:22px;
+  font-size:clamp(22px,4vw,28px);
 }
 
-/* CARD / BLOCK */
+/* CARD */
 .card{
   background:var(--white);
-  padding:30px;
+  padding:26px;
   border-radius:14px;
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  margin-bottom:25px;
+  margin-bottom:22px;
 }
 
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
 }
 
 /* LIST */
@@ -109,7 +110,18 @@ footer{
   background:#1f1f1f;
   color:white;
   text-align:center;
-  padding:30px 20px;
+  padding:28px 20px;
+  font-size:14px;
+}
+
+/* MOBILE TWEAKS */
+@media (max-width:600px){
+  section{
+    padding:40px 16px;
+  }
+  .card{
+    padding:22px;
+  }
 }
 </style>
 </head>
@@ -194,7 +206,7 @@ and lack of keyword-optimized headings. Prepared a detailed SEO improvement repo
 <h3>Social Media Calendar – Crispy Yum</h3>
 <p>
 Created a social media content calendar focusing on consistent brand messaging,
-audience engagement, and increased online visibility.
+audience engagement, and increased online visibility across platforms.
 </p>
 </div>
 
