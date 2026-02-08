@@ -1,121 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nagarajan KC | Digital Marketer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+<style>
+:root{
+  --primary:#6a1b9a;
+  --primary-dark:#4a148c;
+  --bg:#f5f3fa;
+  --white:#ffffff;
+  --text:#333;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fb;
-  color: #222;
-  line-height: 1.6;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+body{
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
 }
 
-section {
-  padding: 70px 0;
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:white;
+  text-align:center;
+  padding:70px 20px;
 }
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
+header h1{
+  font-size:clamp(32px,5vw,44px);
 }
 
-.hero h1 {
-  font-size: 2.8rem;
+header p{
+  font-size:clamp(16px,3vw,20px);
+  margin-top:10px;
 }
 
-.hero span {
-  color: #00e6ff;
+/* NAV */
+nav{
+  background:var(--white);
+  padding:12px 10px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-.hero p {
-  margin: 15px 0 30px;
+nav a{
+  display:inline-block;
+  margin:6px 10px;
+  text-decoration:none;
+  color:var(--primary);
+  font-weight:600;
+  padding:8px 14px;
+  border-radius:6px;
+  transition:0.3s;
 }
 
-.btn {
-  display: inline-block;
-  background: #00e6ff;
-  color: #000;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
+nav a:hover{
+  background:var(--primary);
+  color:white;
 }
 
-/* ABOUT */
-.about {
-  background: #fff;
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
 }
 
-/* SKILLS */
-.skills {
-  background: #f0f3f8;
+h2{
+  color:var(--primary);
+  margin-bottom:22px;
+  font-size:clamp(22px,4vw,28px);
 }
 
-.skill-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+/* CARD */
+.card{
+  background:var(--white);
+  padding:26px;
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom:22px;
 }
 
-.skill {
-  background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
 }
 
-/* PROJECTS */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-
-.project {
-  background: #f5f7fa;
-  padding: 25px;
-  border-radius: 12px;
-}
-
-/* CONTACT */
-.contact {
-  background: #0f2027;
-  color: #fff;
-  text-align: center;
-}
-
-.contact p {
-  color: #ddd;
+/* LIST */
+ul{
+  padding-left:20px;
 }
 
 /* FOOTER */
-footer {
-  background: #000;
-  color: #aaa;
-  text-align: center;
-  padding: 15px;
+footer{
+  background:#1f1f1f;
+  color:white;
+  text-align:center;
+  padding:28px 20px;
+  font-size:14px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
+/* MOBILE TWEAKS */
+@media (max-width:600px){
+  section{
+    padding:40px 16px;
   }
-
-  section {
-    padding: 50px 0;
+  .card{
+    padding:22px;
   }
 }
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Nagarajan KC</h1>
+  <p>Digital Marketer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+Digital Marketing Fresher with hands-on internship experience in SEO and Social Media Marketing.
+Proven ability to drive organic growth through backlink building, content planning, and on-page
+optimization. Familiar with paid ads, email marketing, and analytics, and eager to contribute to
+brand growth using data-driven and creative strategies.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="grid">
+<div class="card">Search Engine Optimization</div>
+<div class="card">Social Media Marketing</div>
+<div class="card">E-mail Marketing</div>
+<div class="card">Performance Marketing</div>
+<div class="card">PPC (Pay-Per-Click)</div>
+<div class="card">Google Analytics</div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Internship Experience</h2>
+<div class="card">
+<h3>Digital Marketing Executive – Izeon Innovative Private Limited</h3>
+<p><strong>Duration:</strong> 2 Months</p>
+<ul>
+<li>Managed and optimized social media platforms to improve brand visibility</li>
+<li>Increased Instagram followers by 150+ organically within 2 months</li>
+<li>Created and submitted 2000+ SEO backlinks using white-hat techniques</li>
+<li>Assisted in On-page and Off-page SEO activities</li>
+<li>Performed basic keyword research and competitor analysis</li>
+<li>Gained real-time exposure to digital marketing workflows and tools</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Branding – Crispy Yum</h3>
+<p>
+Executed a complete branding project focusing on visual identity and traditional
+South Indian snacks.
+</p>
+</div>
+
+<div class="card">
+<h3>SEO Audit – NalamOrganic</h3>
+<p>
+Performed a complete SEO audit identifying missing H1/H2 tags, lorem ipsum content,
+and lack of keyword-optimized headings. Prepared a detailed SEO improvement report.
+</p>
+</div>
+
+<div class="card">
+<h3>Social Media Calendar – Crispy Yum</h3>
+<p>
+Created a social media content calendar focusing on consistent brand messaging,
+audience engagement, and increased online visibility across platforms.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<p>
+<strong>B.Com (Computer Science)</strong><br>
+2021 – 2024<br>
+Government Arts College, Alagappa University
+</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>
+📍 Saidapet, Chennai<br>
+📧 nagarajankc2004@gmail.com<br>
+📞 9342870117
+</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Nagarajan KC | Digital Marketing Portfolio</p>
+</footer>
+
+</body>
+</html>
