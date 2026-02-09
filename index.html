@@ -6,14 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+/* ===== ROOT COLORS (Spectral vibe) ===== */
 :root{
-  --primary:#6a1b9a;
-  --primary-dark:#4a148c;
-  --bg:#f5f3fa;
+  --bg-dark:#1c1d26;
+  --bg-light:#2e3141;
+  --primary:#e63946;
   --white:#ffffff;
-  --text:#333;
+  --text:#dcdcdc;
 }
 
+/* ===== RESET ===== */
 *{
   margin:0;
   padding:0;
@@ -22,201 +24,197 @@
 }
 
 body{
-  background:var(--bg);
+  background:var(--bg-dark);
   color:var(--text);
   line-height:1.7;
 }
 
-/* HEADER */
+/* ===== HERO / HEADER ===== */
 header{
-  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
-  color:white;
+  min-height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+             url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  padding:80px 20px;
+  padding:20px;
 }
 
 header h1{
-  font-size:44px;
+  font-size:clamp(36px,6vw,56px);
+  color:var(--white);
 }
 
 header p{
-  font-size:20px;
-  margin-top:10px;
+  font-size:clamp(16px,3vw,22px);
+  margin:15px 0;
 }
 
-/* NAVIGATION */
+header a{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 26px;
+  background:var(--primary);
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* ===== NAV ===== */
 nav{
-  background:var(--white);
-  padding:15px;
+  background:var(--bg-light);
   text-align:center;
+  padding:14px;
   position:sticky;
   top:0;
   z-index:10;
-  box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 nav a{
-  margin:0 15px;
+  color:var(--white);
   text-decoration:none;
-  color:var(--primary);
-  font-weight:600;
-  padding:8px 12px;
-  border-radius:6px;
-  transition:0.3s;
+  margin:0 12px;
+  font-weight:500;
 }
 
 nav a:hover{
-  background:var(--primary);
-  color:white;
+  color:var(--primary);
 }
 
-/* SECTION */
+/* ===== SECTIONS ===== */
 section{
   max-width:1100px;
   margin:auto;
-  padding:60px 20px;
+  padding:80px 20px;
 }
 
-h2{
-  color:var(--primary);
-  margin-bottom:25px;
-  font-size:28px;
+section h2{
+  text-align:center;
+  font-size:clamp(26px,4vw,34px);
+  margin-bottom:40px;
+  color:var(--white);
 }
 
-/* CARD / BLOCK */
+/* ===== CARD ===== */
 .card{
-  background:var(--white);
+  background:var(--bg-light);
   padding:30px;
   border-radius:14px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
-  margin-bottom:25px;
+  margin-bottom:24px;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:24px;
 }
 
-/* LIST */
-ul{
-  padding-left:20px;
-}
-
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer{
-  background:#1f1f1f;
-  color:white;
+  background:#111;
   text-align:center;
   padding:30px 20px;
+  font-size:14px;
+  color:#aaa;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:600px){
+  section{
+    padding:60px 16px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header>
-  <h1>Nagarajan KC</h1>
-  <p>Digital Marketer</p>
+  <div>
+    <h1>Nagarajan KC</h1>
+    <p>Digital Marketing Fresher</p>
+    <a href="#about">Explore Portfolio</a>
+  </div>
 </header>
 
+<!-- NAV -->
 <nav>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
-  <a href="#education">Education</a>
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
 <h2>About Me</h2>
 <div class="card">
 <p>
 Digital Marketing Fresher with hands-on internship experience in SEO and Social Media Marketing.
-Proven ability to drive organic growth through backlink building, content planning, and on-page
-optimization. Familiar with paid ads, email marketing, and analytics, and eager to contribute to
-brand growth using data-driven and creative strategies.
+Strong in backlink building, content planning, and on-page optimization.
+Passionate about growing brands using data-driven strategies.
 </p>
 </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-<h2>Technical Skills</h2>
+<h2>Skills</h2>
 <div class="grid">
-<div class="card">Search Engine Optimization</div>
-<div class="card">Social Media Marketing</div>
-<div class="card">E-mail Marketing</div>
-<div class="card">Performance Marketing</div>
-<div class="card">PPC (Pay-Per-Click)</div>
-<div class="card">Google Analytics</div>
+  <div class="card">SEO</div>
+  <div class="card">Social Media Marketing</div>
+  <div class="card">Email Marketing</div>
+  <div class="card">Performance Marketing</div>
+  <div class="card">Google Analytics</div>
+  <div class="card">Content Strategy</div>
 </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
 <h2>Internship Experience</h2>
 <div class="card">
-<h3>Digital Marketing Executive – Izeon Innovative Private Limited</h3>
+<h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
 <p><strong>Duration:</strong> 2 Months</p>
 <ul>
-<li>Managed and optimized social media platforms to improve brand visibility</li>
-<li>Increased Instagram followers by 150+ organically within 2 months</li>
-<li>Created and submitted 2000+ SEO backlinks using white-hat techniques</li>
-<li>Assisted in On-page and Off-page SEO activities</li>
-<li>Performed basic keyword research and competitor analysis</li>
-<li>Gained real-time exposure to digital marketing workflows and tools</li>
+  <li>Managed social media platforms</li>
+  <li>Grew Instagram followers by 150+ organically</li>
+  <li>Created 2000+ SEO backlinks</li>
+  <li>Worked on on-page & off-page SEO</li>
 </ul>
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 <div class="grid">
-
-<div class="card">
-<h3>Branding – Crispy Yum</h3>
-<p>
-Executed a complete branding project focusing on visual identity and traditional
-South Indian snacks.
-</p>
-</div>
-
-<div class="card">
-<h3>SEO Audit – NalamOrganic</h3>
-<p>
-Performed a complete SEO audit identifying missing H1/H2 tags, lorem ipsum content,
-and lack of keyword-optimized headings. Prepared a detailed SEO improvement report.
-</p>
-</div>
-
-<div class="card">
-<h3>Social Media Calendar – Crispy Yum</h3>
-<p>
-Created a social media content calendar focusing on consistent brand messaging,
-audience engagement, and increased online visibility.
-</p>
-</div>
-
+  <div class="card">
+    <h3>Crispy Yum – Branding</h3>
+    <p>Traditional snacks brand positioning & content strategy.</p>
+  </div>
+  <div class="card">
+    <h3>SEO Audit – NalamOrganic</h3>
+    <p>Identified technical & content SEO gaps and prepared report.</p>
+  </div>
+  <div class="card">
+    <h3>Social Media Calendar</h3>
+    <p>Monthly content planning to boost engagement.</p>
+  </div>
 </div>
 </section>
 
-<section id="education">
-<h2>Education</h2>
-<div class="card">
-<p>
-<strong>B.Com (cs)</strong><br>
-2021 – 2024<br>
-Government Arts College, Alagappa University
-</p>
-</div>
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
 <h2>Contact</h2>
 <div class="card">
 <p>
-📍 Saidapet, Chennai<br>
+📍 Chennai<br>
 📧 nagarajankc2004@gmail.com<br>
 📞 9342870117
 </p>
@@ -224,7 +222,7 @@ Government Arts College, Alagappa University
 </section>
 
 <footer>
-<p>© 2026 Nagarajan KC | Digital Marketing Portfolio</p>
+<p>© 2026 Nagarajan KC | Portfolio</p>
 </footer>
 
 </body>
