@@ -7,20 +7,17 @@
 
 <style>
 
-/* ===== GOOGLE FONT ===== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
 /* ===== RESET ===== */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Inter',sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body{
-  background:#f8f9fc;
-  color:#1f2937;
+  background:#f4f6f9;
+  color:#222;
   line-height:1.7;
 }
 
@@ -29,41 +26,39 @@ header{
   background:#111827;
   color:#fff;
   text-align:center;
-  padding:25px 0;
-  font-size:20px;
+  padding:25px 15px;
+  font-size:24px;
   font-weight:600;
   letter-spacing:1px;
 }
 
 /* ===== MAIN CONTAINER ===== */
 .container{
-  max-width:900px;
+  max-width:1000px;
   margin:40px auto;
-  background:#ffffff;
-  padding:50px;
+  background:#fff;
+  padding:40px;
+  box-shadow:0 5px 25px rgba(0,0,0,0.08);
   border-radius:8px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
 /* ===== SECTION ===== */
-section{
+.section{
   margin-bottom:40px;
 }
 
-section h2{
+.section h2{
   font-size:18px;
-  font-weight:600;
   margin-bottom:15px;
-  padding-bottom:5px;
-  border-bottom:2px solid #e5e7eb;
+  padding-bottom:6px;
+  border-bottom:2px solid #2563eb;
+  color:#111827;
   text-transform:uppercase;
   letter-spacing:1px;
-  color:#111827;
 }
 
-p{
-  margin-bottom:10px;
-  font-size:15px;
+.section p{
+  margin-bottom:12px;
 }
 
 ul{
@@ -72,11 +67,10 @@ ul{
 
 ul li{
   margin-bottom:8px;
-  font-size:15px;
 }
 
-/* ===== TWO COLUMN GRID ===== */
-.grid-2{
+/* ===== TWO COLUMN LAYOUT ===== */
+.row{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:30px;
@@ -84,19 +78,19 @@ ul li{
 
 /* ===== FOOTER ===== */
 footer{
-  text-align:center;
-  padding:30px 10px;
-  font-size:14px;
   background:#111827;
-  color:#d1d5db;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
 }
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
   .container{
-    padding:30px;
+    padding:25px;
   }
-  .grid-2{
+  .row{
     grid-template-columns:1fr;
   }
 }
@@ -113,80 +107,95 @@ footer{
 <div class="container">
 
   <!-- SUMMARY -->
-  <section>
+  <div class="section">
     <h2>Professional Summary</h2>
     <p>
       Digital Marketing Fresher with hands-on internship experience in SEO and Social Media Marketing.
       Proven ability to drive organic growth through backlink building, content planning, and on-page optimization.
-      Familiar with paid ads, email marketing, and analytics. Eager to contribute to brand growth using
+      Familiar with paid ads, email marketing, and analytics, and eager to contribute to brand growth using
       data-driven and creative strategies.
     </p>
-  </section>
+  </div>
 
-  <!-- INTERNSHIP -->
-  <section>
-    <h2>Internship Experience</h2>
-    <p><strong>Digital Marketing Executive – Izeon Innovative Private Limited</strong></p>
-    <p><em>Duration: 2 Months</em></p>
-    <ul>
-      <li>Managed and optimized social media platforms to improve brand visibility</li>
-      <li>Increased Instagram followers by 150+ organically within 2 months</li>
-      <li>Created and submitted 2000+ SEO backlinks using white-hat techniques</li>
-      <li>Assisted in On-page and Off-page SEO activities</li>
-      <li>Performed keyword research and competitor analysis</li>
-    </ul>
-  </section>
-
-  <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Branding – Crispy Yum:</strong> Executed complete branding strategy focusing on traditional South Indian snack positioning.</li>
-      <li><strong>SEO Audit – NalamOrganic:</strong> Identified missing H1/H2 tags, keyword gaps, and technical SEO issues. Prepared detailed recommendation report.</li>
-      <li><strong>Social Media Calendar – Crispy Yum:</strong> Designed consistent content strategy to improve engagement and visibility.</li>
-    </ul>
-  </section>
-
-  <!-- EDUCATION + SKILLS -->
-  <div class="grid-2">
-
-    <section>
-      <h2>Education</h2>
-      <p><strong>B.Com (CS)</strong></p>
-      <p>Government Arts College, Alagappa University</p>
-      <p>2021 – 2024</p>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
+  <!-- SKILLS -->
+  <div class="section">
+    <h2>Core Skills</h2>
+    <div class="row">
       <ul>
         <li>Search Engine Optimization (SEO)</li>
         <li>Social Media Marketing</li>
         <li>Email Marketing</li>
         <li>Performance Marketing</li>
+      </ul>
+      <ul>
         <li>PPC (Pay-Per-Click)</li>
         <li>Google Analytics</li>
+        <li>Keyword Research</li>
+        <li>Competitor Analysis</li>
       </ul>
-    </section>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <h2>Internship Experience</h2>
+    <p><strong>Digital Marketing Executive</strong> – Izeon Innovative Private Limited (2 Months)</p>
+    <ul>
+      <li>Managed and optimized social media platforms to improve brand visibility.</li>
+      <li>Increased Instagram followers by 150+ organically within 2 months.</li>
+      <li>Created and submitted 2000+ SEO backlinks using white-hat techniques.</li>
+      <li>Assisted in On-page and Off-page SEO activities.</li>
+      <li>Performed basic keyword research and competitor analysis.</li>
+      <li>Gained real-time exposure to digital marketing workflows and tools.</li>
+    </ul>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
+
+    <p><strong>Branding – Crispy Yum</strong></p>
+    <p>
+      Executed a complete branding project focusing on visual identity for traditional South Indian snacks.
+    </p>
+
+    <p><strong>SEO Audit – NalamOrganic</strong></p>
+    <p>
+      Conducted a full SEO audit identifying issues like missing H1/H2 tags, lorem ipsum content, and
+      unoptimized headings. Prepared a detailed improvement report to enhance search visibility.
+    </p>
+
+    <p><strong>Social Media Calendar – Crispy Yum</strong></p>
+    <p>
+      Developed a structured content calendar focusing on brand consistency,
+      audience engagement, and online visibility.
+    </p>
 
   </div>
 
+  <!-- EDUCATION -->
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>B.Com (CS)</strong></p>
+    <p>Government Arts College, Alagappa University (2021 – 2024)</p>
+  </div>
+
   <!-- CERTIFICATION -->
-  <section>
+  <div class="section">
     <h2>Certification</h2>
     <p>Full Stack Digital Marketing – Web D School</p>
-  </section>
+  </div>
 
   <!-- LANGUAGES -->
-  <section>
+  <div class="section">
     <h2>Languages</h2>
     <p>English, Tamil</p>
-  </section>
+  </div>
 
 </div>
 
 <footer>
-  Chennai | 9342870117 | nagarajankc2004@gmail.com
+  Saidapet, Chennai | 9342870117 | nagarajankc2004@gmail.com
 </footer>
 
 </body>
