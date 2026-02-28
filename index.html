@@ -3,226 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nagarajan KC | Digital Marketer</title>
+<title>Nagarajan | Digital Marketer</title>
 
 <style>
-/* ===== GLOBAL ===== */
+
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* ===== RESET ===== */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:'Inter',sans-serif;
 }
 
 body{
-  background:#f4f6f9;
-  color:#333;
-  line-height:1.6;
+  background:#f8f9fc;
+  color:#1f2937;
+  line-height:1.7;
 }
 
-.container{
-  width:90%;
-  max-width:1000px;
-  margin:auto;
-}
-
-/* ===== NAV ===== */
-nav{
+/* ===== HEADER ===== */
+header{
   background:#111827;
-  padding:15px 0;
-}
-
-nav .container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-nav h2{
-  color:#fff;
-}
-
-nav a{
-  color:#ddd;
-  text-decoration:none;
-  margin-left:20px;
-  font-size:14px;
-}
-
-nav a:hover{
-  color:#fff;
-}
-
-/* ===== HERO ===== */
-.hero{
-  background:#1f2937;
   color:#fff;
   text-align:center;
-  padding:80px 20px;
+  padding:25px 0;
+  font-size:20px;
+  font-weight:600;
+  letter-spacing:1px;
 }
 
-.hero h1{
-  font-size:38px;
+/* ===== MAIN CONTAINER ===== */
+.container{
+  max-width:900px;
+  margin:40px auto;
+  background:#ffffff;
+  padding:50px;
+  border-radius:8px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
 }
 
-.hero p{
-  margin-top:10px;
-  font-size:18px;
-  color:#ccc;
-}
-
-.hero .btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:10px 20px;
-  background:#2563eb;
-  color:#fff;
-  text-decoration:none;
-  border-radius:5px;
-}
-
-/* ===== SECTIONS ===== */
+/* ===== SECTION ===== */
 section{
-  padding:60px 0;
+  margin-bottom:40px;
 }
 
 section h2{
-  margin-bottom:20px;
-  border-left:4px solid #2563eb;
-  padding-left:10px;
+  font-size:18px;
+  font-weight:600;
+  margin-bottom:15px;
+  padding-bottom:5px;
+  border-bottom:2px solid #e5e7eb;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#111827;
 }
 
-.card{
-  background:#fff;
-  padding:20px;
-  border-radius:6px;
-  margin-bottom:20px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+p{
+  margin-bottom:10px;
+  font-size:15px;
 }
 
-.grid{
+ul{
+  padding-left:18px;
+}
+
+ul li{
+  margin-bottom:8px;
+  font-size:15px;
+}
+
+/* ===== TWO COLUMN GRID ===== */
+.grid-2{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
 }
 
 /* ===== FOOTER ===== */
 footer{
   text-align:center;
-  padding:20px;
-  background:#111827;
-  color:#aaa;
+  padding:30px 10px;
   font-size:14px;
+  background:#111827;
+  color:#d1d5db;
 }
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .container{
+    padding:30px;
+  }
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="container">
-    <h2>Nagarajan KC</h2>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
+<header>
+  Nagarajan | Digital Marketer
+</header>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>Digital Marketing Fresher</h1>
-  <p>SEO | Social Media | Performance Marketing</p>
-  <a href="#contact" class="btn">Hire Me</a>
+<div class="container">
+
+  <!-- SUMMARY -->
+  <section>
+    <h2>Professional Summary</h2>
+    <p>
+      Digital Marketing Fresher with hands-on internship experience in SEO and Social Media Marketing.
+      Proven ability to drive organic growth through backlink building, content planning, and on-page optimization.
+      Familiar with paid ads, email marketing, and analytics. Eager to contribute to brand growth using
+      data-driven and creative strategies.
+    </p>
+  </section>
+
+  <!-- INTERNSHIP -->
+  <section>
+    <h2>Internship Experience</h2>
+    <p><strong>Digital Marketing Executive – Izeon Innovative Private Limited</strong></p>
+    <p><em>Duration: 2 Months</em></p>
+    <ul>
+      <li>Managed and optimized social media platforms to improve brand visibility</li>
+      <li>Increased Instagram followers by 150+ organically within 2 months</li>
+      <li>Created and submitted 2000+ SEO backlinks using white-hat techniques</li>
+      <li>Assisted in On-page and Off-page SEO activities</li>
+      <li>Performed keyword research and competitor analysis</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Branding – Crispy Yum:</strong> Executed complete branding strategy focusing on traditional South Indian snack positioning.</li>
+      <li><strong>SEO Audit – NalamOrganic:</strong> Identified missing H1/H2 tags, keyword gaps, and technical SEO issues. Prepared detailed recommendation report.</li>
+      <li><strong>Social Media Calendar – Crispy Yum:</strong> Designed consistent content strategy to improve engagement and visibility.</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION + SKILLS -->
+  <div class="grid-2">
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.Com (CS)</strong></p>
+      <p>Government Arts College, Alagappa University</p>
+      <p>2021 – 2024</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Search Engine Optimization (SEO)</li>
+        <li>Social Media Marketing</li>
+        <li>Email Marketing</li>
+        <li>Performance Marketing</li>
+        <li>PPC (Pay-Per-Click)</li>
+        <li>Google Analytics</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- CERTIFICATION -->
+  <section>
+    <h2>Certification</h2>
+    <p>Full Stack Digital Marketing – Web D School</p>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section>
+    <h2>Languages</h2>
+    <p>English, Tamil</p>
+  </section>
+
 </div>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        Digital Marketing Fresher with hands-on internship experience in SEO and Social Media Marketing.
-        Skilled in backlink building, content planning, and on-page optimization.
-        Passionate about helping brands grow using data-driven strategies.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">SEO</div>
-      <div class="card">Social Media Marketing</div>
-      <div class="card">Email Marketing</div>
-      <div class="card">Performance Marketing</div>
-      <div class="card">Google Analytics</div>
-      <div class="card">Content Strategy</div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="container">
-    <h2>Internship Experience</h2>
-    <div class="card">
-      <h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
-      <p><strong>Duration:</strong> 2 Months</p>
-      <ul>
-        <li>Managed social media platforms</li>
-        <li>Grew Instagram followers by 150+ organically</li>
-        <li>Created 2000+ SEO backlinks</li>
-        <li>Worked on on-page & off-page SEO</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Crispy Yum – Branding</h3>
-        <p>Traditional snacks brand positioning & content strategy.</p>
-      </div>
-      <div class="card">
-        <h3>SEO Audit – NalamOrganic</h3>
-        <p>Technical & content SEO analysis report.</p>
-      </div>
-      <div class="card">
-        <h3>Social Media Calendar</h3>
-        <p>Monthly engagement-focused content planning.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>
-        📍 Chennai<br>
-        📧 nagarajankc2004@gmail.com<br>
-        📞 9342870117
-      </p>
-    </div>
-  </div>
-</section>
-
 <footer>
-  © 2026 Nagarajan KC | Portfolio
+  Chennai | 9342870117 | nagarajankc2004@gmail.com
 </footer>
 
 </body>
