@@ -12,110 +12,117 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family:'Segoe UI',sans-serif;
 }
 
 body{
-  background:#eef1f5;
+  background:#f9fafc;
   color:#222;
+  line-height:1.6;
 }
 
 /* ===== HEADER ===== */
 header{
-  background:#0f172a;
-  color:#fff;
+  padding:30px 20px;
   text-align:center;
-  padding:25px;
-  font-size:26px;
+  font-size:22px;
   font-weight:600;
+  background:#111827;
+  color:#fff;
   letter-spacing:1px;
 }
 
-/* ===== LAYOUT ===== */
-.wrapper{
+/* ===== HERO SECTION ===== */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+  background:#ffffff;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#555;
+  font-size:18px;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container{
   max-width:1100px;
-  margin:40px auto;
-  display:grid;
-  grid-template-columns:320px 1fr;
-  gap:30px;
+  margin:60px auto;
   padding:0 20px;
 }
 
-/* ===== SIDEBAR ===== */
-.sidebar{
-  background:#111827;
-  color:#fff;
-  padding:30px;
-  border-radius:12px;
-}
-
-.sidebar h3{
-  margin-bottom:15px;
-  font-size:18px;
-  border-bottom:1px solid rgba(255,255,255,0.2);
-  padding-bottom:6px;
-}
-
-.sidebar ul{
-  list-style:none;
-  margin-bottom:25px;
-}
-
-.sidebar ul li{
-  margin-bottom:10px;
-  font-size:14px;
-  opacity:0.9;
-}
-
-/* ===== MAIN CONTENT ===== */
-.main{
-  background:#fff;
-  padding:35px;
-  border-radius:12px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.05);
-}
-
 .section{
-  margin-bottom:35px;
+  margin-bottom:80px;
 }
 
 .section h2{
-  font-size:20px;
-  margin-bottom:15px;
-  color:#0f172a;
-  border-left:4px solid #2563eb;
-  padding-left:10px;
+  font-size:24px;
+  margin-bottom:25px;
+  position:relative;
 }
 
-.section p{
-  margin-bottom:10px;
+.section h2::after{
+  content:"";
+  width:50px;
+  height:3px;
+  background:#2563eb;
+  position:absolute;
+  bottom:-8px;
+  left:0;
 }
 
-.section ul{
-  padding-left:20px;
+/* ===== GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
 }
 
-.section ul li{
+/* ===== CARD ===== */
+.card{
+  background:#ffffff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* ===== LIST ===== */
+ul{
+  padding-left:18px;
+}
+
+ul li{
   margin-bottom:8px;
 }
 
 /* ===== FOOTER ===== */
 footer{
-  background:#0f172a;
+  background:#111827;
   color:#fff;
   text-align:center;
-  padding:20px;
-  margin-top:40px;
+  padding:25px 15px;
   font-size:14px;
 }
 
 /* ===== RESPONSIVE ===== */
-@media(max-width:900px){
-  .wrapper{
-    grid-template-columns:1fr;
+@media(max-width:768px){
+  .hero h1{
+    font-size:32px;
   }
-  .sidebar{
-    text-align:center;
+  .hero p{
+    font-size:16px;
   }
 }
 
@@ -128,91 +135,86 @@ footer{
   Nagarajan | Digital Marketer
 </header>
 
-<div class="wrapper">
+<section class="hero">
+  <h1>Building Brands Through Smart Digital Strategies</h1>
+  <p>
+    Digital Marketing Fresher with hands-on internship experience in SEO,
+    Social Media Marketing, and Performance Marketing.
+    Passionate about driving organic growth and improving online visibility.
+  </p>
+</section>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
+<div class="container">
 
-    <h3>Contact</h3>
-    <ul>
-      <li>📍 Saidapet, Chennai</li>
-      <li>📞 9342870117</li>
-      <li>📧 nagarajankc2004@gmail.com</li>
-    </ul>
-
-    <h3>Core Skills</h3>
-    <ul>
-      <li>SEO</li>
-      <li>Social Media Marketing</li>
-      <li>Email Marketing</li>
-      <li>Performance Marketing</li>
-      <li>PPC</li>
-      <li>Google Analytics</li>
-    </ul>
-
-    <h3>Languages</h3>
-    <ul>
-      <li>English</li>
-      <li>Tamil</li>
-    </ul>
-
-    <h3>Certification</h3>
-    <ul>
-      <li>Full Stack Digital Marketing – Web D School</li>
-    </ul>
-
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <div class="main">
-
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>
-        Digital Marketing Fresher with internship experience in SEO and Social Media Marketing.
-        Skilled in backlink building, keyword research, and content planning.
-        Passionate about driving organic growth and improving brand visibility
-        through data-driven strategies.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Internship Experience</h2>
-      <p><strong>Digital Marketing Executive – Izeon Innovative Private Limited (2 Months)</strong></p>
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
+      <p><strong>Duration:</strong> 2 Months</p>
       <ul>
-        <li>Managed and optimized social media platforms.</li>
+        <li>Managed social media platforms and improved engagement.</li>
         <li>Increased Instagram followers by 150+ organically.</li>
         <li>Created 2000+ SEO backlinks using white-hat techniques.</li>
-        <li>Worked on On-page & Off-page SEO.</li>
+        <li>Worked on on-page & off-page SEO activities.</li>
         <li>Performed keyword research and competitor analysis.</li>
       </ul>
     </div>
+  </div>
 
-    <div class="section">
-      <h2>Projects</h2>
-
-      <p><strong>Branding – Crispy Yum</strong></p>
-      <p>Executed a complete branding strategy focusing on traditional South Indian snacks identity.</p>
-
-      <p><strong>SEO Audit – NalamOrganic</strong></p>
-      <p>Identified missing tags, content issues, and prepared detailed SEO improvement report.</p>
-
-      <p><strong>Social Media Calendar – Crispy Yum</strong></p>
-      <p>Planned monthly content strategy to improve engagement and brand consistency.</p>
-
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Crispy Yum – Branding</h3>
+        <p>Developed complete brand positioning and content strategy for a traditional snacks brand.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Audit – NalamOrganic</h3>
+        <p>Identified missing tags, poor heading structure, and optimization gaps. Prepared improvement report.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Calendar</h3>
+        <p>Planned structured monthly content strategy for consistent engagement and growth.</p>
+      </div>
     </div>
+  </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>B.Com (CS)</strong> – Government Arts College, Alagappa University (2021–2024)</p>
+  <!-- SKILLS -->
+  <div class="section">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">SEO & Keyword Research</div>
+      <div class="card">Social Media Marketing</div>
+      <div class="card">Email Marketing</div>
+      <div class="card">Performance Marketing & PPC</div>
+      <div class="card">Google Analytics</div>
+      <div class="card">Content Strategy</div>
     </div>
+  </div>
 
+  <!-- EDUCATION -->
+  <div class="section">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.Com (CS)</strong></p>
+      <p>Government Arts College – Alagappa University (2021–2024)</p>
+    </div>
+  </div>
+
+  <!-- CERTIFICATION -->
+  <div class="section">
+    <h2>Certification</h2>
+    <div class="card">
+      Full Stack Digital Marketing – Web D School
+    </div>
   </div>
 
 </div>
 
 <footer>
-  © 2026 Nagarajan | Digital Marketing Portfolio
+  Saidapet, Chennai | 9342870117 | nagarajankc2004@gmail.com
 </footer>
 
 </body>
