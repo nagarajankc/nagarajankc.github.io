@@ -1,214 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nagarajan | Digital Marketer</title>
-
-<style>
-
 /* ===== RESET ===== */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Segoe UI', sans-serif;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 body{
-  background:#f8fafc;
+  background:linear-gradient(135deg,#f8fafc,#eef2f7);
   color:#1e293b;
-  line-height:1.7;
+  line-height:1.8;
 }
 
 /* ===== HEADER ===== */
 header{
-  background:#111827;
+  background:linear-gradient(90deg,#0f172a,#1e293b);
   color:#fff;
   text-align:center;
-  padding:30px 15px;
-  font-size:22px;
+  padding:28px 15px;
+  font-size:24px;
   font-weight:600;
   letter-spacing:1px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.15);
 }
 
 /* ===== CONTAINER ===== */
 .container{
   max-width:1100px;
   margin:auto;
-  padding:60px 20px;
+  padding:70px 20px;
 }
 
 /* ===== SECTION ===== */
 .section{
-  margin-bottom:80px;
+  margin-bottom:100px;
 }
 
 .section h2{
-  font-size:26px;
-  margin-bottom:25px;
+  font-size:28px;
+  margin-bottom:35px;
   position:relative;
+  font-weight:600;
 }
 
 .section h2::after{
   content:"";
-  width:60px;
-  height:3px;
-  background:#2563eb;
+  width:70px;
+  height:4px;
+  background:linear-gradient(90deg,#2563eb,#38bdf8);
   position:absolute;
-  bottom:-8px;
+  bottom:-10px;
   left:0;
+  border-radius:10px;
 }
 
 /* ===== CARD ===== */
 .card{
   background:#ffffff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+  transition:0.4s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 /* ===== GRID ===== */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+  gap:30px;
 }
 
-/* ===== POSTER GALLERY ===== */
+/* ===== GALLERY ===== */
 .gallery img{
   width:100%;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
-  transition:0.3s ease;
+  border-radius:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:all 0.4s ease;
+  cursor:pointer;
 }
 
 .gallery img:hover{
-  transform:scale(1.03);
+  transform:scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,0.12);
 }
 
 /* ===== LIST ===== */
 ul{
-  padding-left:18px;
+  padding-left:20px;
 }
 
 ul li{
-  margin-bottom:8px;
+  margin-bottom:10px;
 }
 
 /* ===== FOOTER ===== */
 footer{
-  background:#111827;
+  background:linear-gradient(90deg,#0f172a,#1e293b);
   color:#fff;
   text-align:center;
-  padding:25px 15px;
+  padding:30px 15px;
   font-size:14px;
+  letter-spacing:0.5px;
+  margin-top:50px;
 }
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
   .container{
-    padding:40px 15px;
+    padding:50px 15px;
+  }
+
+  .section{
+    margin-bottom:70px;
+  }
+
+  .section h2{
+    font-size:22px;
   }
 }
-
-</style>
-</head>
-
-<body>
-
-<header>
-  Nagarajan | Digital Marketer
-</header>
-
-<div class="container">
-
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>Professional Profile</h2>
-    <div class="card">
-      <p>
-        I am a passionate Digital Marketing Fresher with practical internship experience in SEO,
-        Social Media Marketing, and Performance Marketing. During my internship at Izeon Innovative Pvt Ltd,
-        I actively contributed to real-time marketing campaigns and brand growth strategies.
-      </p>
-      <br>
-      <p>
-        I successfully created over 2000+ white-hat SEO backlinks, improved Instagram engagement
-        organically by 150+ followers within two months, and supported on-page & off-page optimization.
-        My strengths include keyword research, competitor analysis, and structured content planning.
-      </p>
-      <br>
-      <p>
-        I aim to help brands grow digitally using data-driven strategies, creative execution,
-        and consistent performance tracking.
-      </p>
-    </div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <div class="section">
-    <h2>Internship Experience</h2>
-    <div class="card">
-      <h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
-      <p><strong>Duration:</strong> 2 Months</p>
-      <ul>
-        <li>Managed and optimized social media platforms.</li>
-        <li>Improved organic Instagram growth by 150+ followers.</li>
-        <li>Built 2000+ SEO backlinks using ethical techniques.</li>
-        <li>Performed keyword research and competitor analysis.</li>
-        <li>Supported complete On-page and Off-page SEO process.</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- PROJECTS -->
-  <div class="section">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Crispy Yum – Branding Strategy</h3>
-        <p>
-          Developed brand positioning strategy for a traditional snacks brand,
-          focusing on visual identity, product storytelling, and engagement-based content planning.
-        </p>
-      </div>
-      <div class="card">
-        <h3>SEO Audit – NalamOrganic</h3>
-        <p>
-          Conducted full SEO audit identifying missing H1/H2 tags, unoptimized content,
-          and technical gaps. Delivered improvement recommendations to enhance search ranking.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Social Media Calendar</h3>
-        <p>
-          Designed structured monthly content calendar for consistent posting,
-          brand messaging, and audience engagement growth.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- POSTER SHOWCASE -->
-  <div class="section">
-    <h2>Creative Works – Crispy Yum Campaigns</h2>
-    <div class="grid gallery">
-      <img src="eid.jpg" alt="Eid Campaign">
-      <img src="discount.jpg" alt="Discount Poster">
-      <img src="product.jpg" alt="Product Launch">
-      <img src="snack.jpg" alt="Snack Promotion">
-      <img src="ipl.jpg" alt="IPL Campaign">
-      <img src="instagram.jpg" alt="Instagram Banner">
-      <img src="womensday.png" alt="Women’s Day Poster">
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  Saidapet, Chennai | 9342870117 | nagarajankc2004@gmail.com
-</footer>
-
-</body>
-</html>
