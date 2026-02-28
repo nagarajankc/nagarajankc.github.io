@@ -12,70 +12,60 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Segoe UI',sans-serif;
+  font-family:'Segoe UI', sans-serif;
 }
 
 body{
-  background:#f9fafc;
-  color:#222;
-  line-height:1.6;
+  background:#f8fafc;
+  color:#1e293b;
+  line-height:1.7;
 }
 
 /* ===== HEADER ===== */
 header{
-  padding:30px 20px;
-  text-align:center;
-  font-size:22px;
-  font-weight:600;
   background:#111827;
   color:#fff;
+  text-align:center;
+  padding:30px 15px;
+  font-size:22px;
+  font-weight:600;
   letter-spacing:1px;
 }
 
-/* ===== HERO SECTION ===== */
-.hero{
-  padding:80px 20px;
-  text-align:center;
-  background:#ffffff;
-}
-
-.hero h1{
-  font-size:42px;
-  margin-bottom:15px;
-}
-
-.hero p{
-  max-width:700px;
-  margin:auto;
-  color:#555;
-  font-size:18px;
-}
-
-/* ===== MAIN LAYOUT ===== */
+/* ===== CONTAINER ===== */
 .container{
   max-width:1100px;
-  margin:60px auto;
-  padding:0 20px;
+  margin:auto;
+  padding:60px 20px;
 }
 
+/* ===== SECTION ===== */
 .section{
   margin-bottom:80px;
 }
 
 .section h2{
-  font-size:24px;
+  font-size:26px;
   margin-bottom:25px;
   position:relative;
 }
 
 .section h2::after{
   content:"";
-  width:50px;
+  width:60px;
   height:3px;
   background:#2563eb;
   position:absolute;
   bottom:-8px;
   left:0;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:#ffffff;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
 /* ===== GRID ===== */
@@ -85,17 +75,16 @@ header{
   gap:25px;
 }
 
-/* ===== CARD ===== */
-.card{
-  background:#ffffff;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+/* ===== POSTER GALLERY ===== */
+.gallery img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
   transition:0.3s ease;
 }
 
-.card:hover{
-  transform:translateY(-5px);
+.gallery img:hover{
+  transform:scale(1.03);
 }
 
 /* ===== LIST ===== */
@@ -118,11 +107,8 @@ footer{
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:768px){
-  .hero h1{
-    font-size:32px;
-  }
-  .hero p{
-    font-size:16px;
+  .container{
+    padding:40px 15px;
   }
 }
 
@@ -135,29 +121,43 @@ footer{
   Nagarajan | Digital Marketer
 </header>
 
-<section class="hero">
-  <h1>Building Brands Through Smart Digital Strategies</h1>
-  <p>
-    Digital Marketing Fresher with hands-on internship experience in SEO,
-    Social Media Marketing, and Performance Marketing.
-    Passionate about driving organic growth and improving online visibility.
-  </p>
-</section>
-
 <div class="container">
+
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>Professional Profile</h2>
+    <div class="card">
+      <p>
+        I am a passionate Digital Marketing Fresher with practical internship experience in SEO,
+        Social Media Marketing, and Performance Marketing. During my internship at Izeon Innovative Pvt Ltd,
+        I actively contributed to real-time marketing campaigns and brand growth strategies.
+      </p>
+      <br>
+      <p>
+        I successfully created over 2000+ white-hat SEO backlinks, improved Instagram engagement
+        organically by 150+ followers within two months, and supported on-page & off-page optimization.
+        My strengths include keyword research, competitor analysis, and structured content planning.
+      </p>
+      <br>
+      <p>
+        I aim to help brands grow digitally using data-driven strategies, creative execution,
+        and consistent performance tracking.
+      </p>
+    </div>
+  </div>
 
   <!-- EXPERIENCE -->
   <div class="section">
-    <h2>Experience</h2>
+    <h2>Internship Experience</h2>
     <div class="card">
       <h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
       <p><strong>Duration:</strong> 2 Months</p>
       <ul>
-        <li>Managed social media platforms and improved engagement.</li>
-        <li>Increased Instagram followers by 150+ organically.</li>
-        <li>Created 2000+ SEO backlinks using white-hat techniques.</li>
-        <li>Worked on on-page & off-page SEO activities.</li>
+        <li>Managed and optimized social media platforms.</li>
+        <li>Improved organic Instagram growth by 150+ followers.</li>
+        <li>Built 2000+ SEO backlinks using ethical techniques.</li>
         <li>Performed keyword research and competitor analysis.</li>
+        <li>Supported complete On-page and Off-page SEO process.</li>
       </ul>
     </div>
   </div>
@@ -167,47 +167,40 @@ footer{
     <h2>Projects</h2>
     <div class="grid">
       <div class="card">
-        <h3>Crispy Yum – Branding</h3>
-        <p>Developed complete brand positioning and content strategy for a traditional snacks brand.</p>
+        <h3>Crispy Yum – Branding Strategy</h3>
+        <p>
+          Developed brand positioning strategy for a traditional snacks brand,
+          focusing on visual identity, product storytelling, and engagement-based content planning.
+        </p>
       </div>
       <div class="card">
         <h3>SEO Audit – NalamOrganic</h3>
-        <p>Identified missing tags, poor heading structure, and optimization gaps. Prepared improvement report.</p>
+        <p>
+          Conducted full SEO audit identifying missing H1/H2 tags, unoptimized content,
+          and technical gaps. Delivered improvement recommendations to enhance search ranking.
+        </p>
       </div>
       <div class="card">
         <h3>Social Media Calendar</h3>
-        <p>Planned structured monthly content strategy for consistent engagement and growth.</p>
+        <p>
+          Designed structured monthly content calendar for consistent posting,
+          brand messaging, and audience engagement growth.
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- SKILLS -->
+  <!-- POSTER SHOWCASE -->
   <div class="section">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">SEO & Keyword Research</div>
-      <div class="card">Social Media Marketing</div>
-      <div class="card">Email Marketing</div>
-      <div class="card">Performance Marketing & PPC</div>
-      <div class="card">Google Analytics</div>
-      <div class="card">Content Strategy</div>
-    </div>
-  </div>
-
-  <!-- EDUCATION -->
-  <div class="section">
-    <h2>Education</h2>
-    <div class="card">
-      <p><strong>B.Com (CS)</strong></p>
-      <p>Government Arts College – Alagappa University (2021–2024)</p>
-    </div>
-  </div>
-
-  <!-- CERTIFICATION -->
-  <div class="section">
-    <h2>Certification</h2>
-    <div class="card">
-      Full Stack Digital Marketing – Web D School
+    <h2>Creative Works – Crispy Yum Campaigns</h2>
+    <div class="grid gallery">
+      <img src="eid.jpg" alt="Eid Campaign">
+      <img src="discount.jpg" alt="Discount Poster">
+      <img src="product.jpg" alt="Product Launch">
+      <img src="snack.jpg" alt="Snack Promotion">
+      <img src="ipl.jpg" alt="IPL Campaign">
+      <img src="instagram.jpg" alt="Instagram Banner">
+      <img src="womensday.png" alt="Women’s Day Poster">
     </div>
   </div>
 
