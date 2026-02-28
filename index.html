@@ -1,173 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nagarajan KC | Digital Marketer</title>
+
 <style>
-
-/* ===== GOOGLE FONT ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-/* ===== ROOT COLORS ===== */
-:root{
-  --bg-dark:#14151c;
-  --bg-light:#1f2230;
-  --primary:#ff4d5a;
-  --white:#ffffff;
-  --text:#cfcfcf;
-}
-
-/* ===== RESET ===== */
+/* ===== GLOBAL ===== */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:"Poppins",sans-serif;
-  scroll-behavior:smooth;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-  background:var(--bg-dark);
-  color:var(--text);
-  line-height:1.8;
+  background:#f4f6f9;
+  color:#333;
+  line-height:1.6;
 }
 
-/* ===== HERO ===== */
-header{
-  min-height:100vh;
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-             url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") center/cover;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:20px;
-}
-
-header h1{
-  font-size:clamp(40px,6vw,60px);
-  color:var(--white);
-  font-weight:700;
-}
-
-header p{
-  font-size:20px;
-  margin:20px 0;
-}
-
-header a{
-  display:inline-block;
-  padding:14px 32px;
-  background:var(--primary);
-  color:white;
-  text-decoration:none;
-  border-radius:40px;
-  font-weight:600;
-  transition:0.3s ease;
-}
-
-header a:hover{
-  background:#ff2e3d;
-  transform:translateY(-3px);
+.container{
+  width:90%;
+  max-width:1000px;
+  margin:auto;
 }
 
 /* ===== NAV ===== */
 nav{
-  backdrop-filter:blur(10px);
-  background:rgba(20,21,28,0.8);
-  text-align:center;
-  padding:16px;
-  position:sticky;
-  top:0;
-  z-index:100;
+  background:#111827;
+  padding:15px 0;
+}
+
+nav .container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h2{
+  color:#fff;
 }
 
 nav a{
-  color:var(--white);
+  color:#ddd;
   text-decoration:none;
-  margin:0 18px;
-  font-weight:500;
-  transition:0.3s;
+  margin-left:20px;
+  font-size:14px;
 }
 
 nav a:hover{
-  color:var(--primary);
+  color:#fff;
+}
+
+/* ===== HERO ===== */
+.hero{
+  background:#1f2937;
+  color:#fff;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.hero h1{
+  font-size:38px;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:18px;
+  color:#ccc;
+}
+
+.hero .btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 20px;
+  background:#2563eb;
+  color:#fff;
+  text-decoration:none;
+  border-radius:5px;
 }
 
 /* ===== SECTIONS ===== */
 section{
-  max-width:1100px;
-  margin:auto;
-  padding:100px 20px;
+  padding:60px 0;
 }
 
 section h2{
-  text-align:center;
-  font-size:34px;
-  margin-bottom:50px;
-  color:var(--white);
-  position:relative;
+  margin-bottom:20px;
+  border-left:4px solid #2563eb;
+  padding-left:10px;
 }
 
-section h2::after{
-  content:"";
-  width:60px;
-  height:3px;
-  background:var(--primary);
-  display:block;
-  margin:10px auto 0;
-}
-
-/* ===== CARD ===== */
 .card{
-  background:var(--bg-light);
-  padding:30px;
-  border-radius:16px;
-  margin-bottom:24px;
-  transition:0.3s;
-  border:1px solid rgba(255,255,255,0.05);
+  background:#fff;
+  padding:20px;
+  border-radius:6px;
+  margin-bottom:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
-.card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-/* ===== GRID ===== */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:24px;
-}
-
-/* ===== LIST STYLE ===== */
-ul{
-  margin-top:15px;
-  padding-left:20px;
-}
-
-ul li{
-  margin-bottom:8px;
-}
-
-/* ===== CONTACT ===== */
-#contact .card{
-  text-align:center;
-  font-size:18px;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
 }
 
 /* ===== FOOTER ===== */
 footer{
-  background:#0d0e13;
   text-align:center;
-  padding:30px 20px;
+  padding:20px;
+  background:#111827;
+  color:#aaa;
   font-size:14px;
-  color:#888;
 }
-
-/* ===== MOBILE ===== */
-@media(max-width:768px){
-  section{
-    padding:70px 16px;
-  }
-  nav a{
-    margin:0 10px;
-  }
-}
-
 </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container">
+    <h2>Nagarajan KC</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Digital Marketing Fresher</h1>
+  <p>SEO | Social Media | Performance Marketing</p>
+  <a href="#contact" class="btn">Hire Me</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Digital Marketing Fresher with hands-on internship experience in SEO and Social Media Marketing.
+        Skilled in backlink building, content planning, and on-page optimization.
+        Passionate about helping brands grow using data-driven strategies.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">SEO</div>
+      <div class="card">Social Media Marketing</div>
+      <div class="card">Email Marketing</div>
+      <div class="card">Performance Marketing</div>
+      <div class="card">Google Analytics</div>
+      <div class="card">Content Strategy</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <h2>Internship Experience</h2>
+    <div class="card">
+      <h3>Digital Marketing Executive – Izeon Innovative Pvt Ltd</h3>
+      <p><strong>Duration:</strong> 2 Months</p>
+      <ul>
+        <li>Managed social media platforms</li>
+        <li>Grew Instagram followers by 150+ organically</li>
+        <li>Created 2000+ SEO backlinks</li>
+        <li>Worked on on-page & off-page SEO</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Crispy Yum – Branding</h3>
+        <p>Traditional snacks brand positioning & content strategy.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Audit – NalamOrganic</h3>
+        <p>Technical & content SEO analysis report.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Calendar</h3>
+        <p>Monthly engagement-focused content planning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        📍 Chennai<br>
+        📧 nagarajankc2004@gmail.com<br>
+        📞 9342870117
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Nagarajan KC | Portfolio
+</footer>
+
+</body>
+</html>
